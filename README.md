@@ -1,5 +1,7 @@
 # Impacto de Técnicas de Pré-processamento no Desempenho de Algoritmos de Classificação Binária
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24451327.svg)](https://doi.org/10.5281/zenodo.24451327)
+
 Código-fonte, dados processados e resultados do Trabalho de Conclusão de Curso (Bacharelado em Estatística,
 Universidade Federal Fluminense, 2026).
 
