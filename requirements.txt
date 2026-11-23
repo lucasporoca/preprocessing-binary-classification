@@ -1,0 +1,16 @@
+# Dependências mínimas (as versões exatas verificadas estão em requirements-lock.txt)
+numpy>=1.26
+pandas>=2.2
+scipy>=1.11
+scikit-learn>=1.7        # KBinsDiscretizer(quantile_method=...) e TargetEncoder exigem >= 1.7
+imbalanced-learn>=0.14   # compatível com scikit-learn 1.7+
+xgboost>=2.0
+feature-engine>=1.8
+statsmodels>=0.14
+scikit-posthocs>=0.9
+matplotlib>=3.8
+seaborn>=0.13
+scienceplots>=2.1        # estilo "science" dos gráficos: exige LaTeX instalado (inclui o pacote cm-super)
+joblib>=1.3
+tqdm>=4.66
+openml>=0.14,<0.16       # usado só em scripts/01_extract_data.py

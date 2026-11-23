@@ -1,3 +1,14 @@
+"""Etapa 3 - Agregação.
+
+Junta os resultados por conjunto e agrega as 10 partições (média das métricas de
+desempenho; tempo a partir da 2ª partição; memória e tamanho em disco medidos na
+1ª partição, executada isoladamente).
+
+Entrada : data/02_results/*.csv
+Saída   : data/aggregated_results.csv
+Uso     : python scripts/03_aggregate_results.py
+"""
+
 import os
 import glob
 import pandas as pd
@@ -6,7 +17,7 @@ import pandas as pd
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     
-    input_dir = os.path.abspath(os.path.join(script_dir, '../data/2 - results'))
+    input_dir = os.path.abspath(os.path.join(script_dir, '../data/02_results'))
     output_path = os.path.abspath(os.path.join(script_dir, '../data/aggregated_results.csv'))
     
     csv_files = glob.glob(os.path.join(input_dir, '*.csv'))

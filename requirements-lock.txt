@@ -1,0 +1,17 @@
+# Versões com as quais os scripts 02 a 06 foram reexecutados e verificados (Python 3.12, nov/2026).
+# Para recriar exatamente: pip install -r requirements-lock.txt
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+imbalanced-learn==0.14.2
+xgboost==3.4.1
+feature-engine==1.9.4
+statsmodels==0.15.0
+scikit-posthocs==0.18.0
+matplotlib==3.11.2
+seaborn==0.13.2
+scienceplots==2.2.2
+joblib==1.6.0
+tqdm==4.70.1
+openml==0.15.1

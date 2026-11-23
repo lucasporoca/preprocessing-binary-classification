@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "Se você usar este software, os dados ou os resultados, cite-o conforme abaixo."
+type: software
+title: "Impacto de Técnicas de Pré-processamento no Desempenho de Algoritmos de Classificação Binária"
+version: "1.0.0"
+date-released: "2026-11-22"
+license: MIT
+repository-code: "https://github.com/lucasporoca/TCC"
+authors:
+  - family-names: Poroca
+    given-names: Lucas Ribeiro
+    orcid: "https://orcid.org/0009-0009-4894-4848"
+    affiliation: "Universidade Federal Fluminense (UFF)"
+abstract: >-
+  Código, dados processados e resultados do Trabalho de Conclusão de Curso
+  (Bacharelado em Estatística, UFF, 2026, orientado pela Profa. Dra. Karina
+  Yuriko Yaginuma). O experimento compara 14 técnicas de pré-processamento (mais
+  um cenário baseline) em 7 algoritmos de classificação binária, sobre 35
+  conjuntos de dados da suíte OpenML-CC18, em duas perspectivas (Igualdade e
+  Equidade), usando MCC, custo computacional, teste de Wilcoxon pareado com
+  correção de Benjamini-Hochberg e diagramas de diferença crítica. A monografia foi
+  apresentada sob o nome Lucas de Oliveira Poroca (nome anterior do autor).
+keywords:
+  - machine learning
+  - aprendizado de máquina
+  - data preprocessing
+  - pré-processamento de dados
+  - binary classification
+  - classificação binária
+  - Matthews correlation coefficient
+  - OpenML-CC18
+  - benchmark
+  - statistical tests

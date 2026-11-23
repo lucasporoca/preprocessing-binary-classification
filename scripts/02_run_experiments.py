@@ -1,3 +1,17 @@
+"""Etapa 2 - Experimentos.
+
+Para cada conjunto de dados, treina e avalia 7 algoritmos x 17 configurações de
+pré-processamento x 2 perspectivas (Igualdade e Equidade) com validação cruzada
+estratificada de 10 partições (semente 42). Registra MCC, ROC-AUC, PR-AUC,
+tempo, memória e tamanho do pipeline em disco.
+
+Entrada : data/01_datasets/*.csv
+Saída   : data/02_results/<dataset>_results.csv  (um arquivo por conjunto)
+Uso     : python scripts/02_run_experiments.py
+Atenção : demora horas. Conjuntos que já têm arquivo de resultado são pulados;
+          para refazer um conjunto, apague o seu arquivo em data/02_results.
+"""
+
 import copy
 import gc
 import os
@@ -119,7 +133,7 @@ class FiniteCapper(BaseEstimator, TransformerMixin):
 
     def transform(self, X):
         is_df = isinstance(X, pd.DataFrame)
-        X_arr = X.copy().to_numpy() if is_df else np.copy(X)
+        X_arr = X.to_numpy(copy=True) if is_df else np.copy(X)
         for i in range(X_arr.shape[1]):
             X_arr[:, i] = np.where(np.isposinf(X_arr[:, i]), self.max_finite_[i], X_arr[:, i])
             X_arr[:, i] = np.where(np.isneginf(X_arr[:, i]), self.min_finite_[i], X_arr[:, i])
@@ -394,8 +408,8 @@ def run_experiment(file_path, output_dir, n_jobs=-1):
 
 if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    input_dir = os.path.abspath(os.path.join(script_dir, '../data/1 - datasets'))
-    output_dir = os.path.abspath(os.path.join(script_dir, '../data/2 - results'))
+    input_dir = os.path.abspath(os.path.join(script_dir, '../data/01_datasets'))
+    output_dir = os.path.abspath(os.path.join(script_dir, '../data/02_results'))
 
     os.makedirs(output_dir, exist_ok=True)
 

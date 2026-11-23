@@ -1,3 +1,15 @@
+"""Etapa 4 - Testes estatísticos.
+
+Teste de Wilcoxon pareado com correção de Benjamini-Hochberg sobre o MCC
+(entre algoritmos para cada técnica, e entre técnicas para cada algoritmo, em
+cada perspectiva), com ranks médios e diagramas de diferença crítica.
+
+Entrada : data/aggregated_results.csv
+Saída   : data/03_tests/pvalues/*.csv, data/03_tests/ranks/*.csv,
+          images/cd_plots/{models,preprocessors}/*.pdf
+Uso     : python scripts/04_statistical_tests.py   (requer LaTeX para o estilo "science")
+"""
+
 import re
 import itertools
 from pathlib import Path
@@ -15,8 +27,8 @@ plt.style.use(['science'])
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DIRS = {
-    'ranks': BASE_DIR / "data/3 - tests/ranks",
-    'pvalues': BASE_DIR / "data/3 - tests/pvalues",
+    'ranks': BASE_DIR / "data/03_tests/ranks",
+    'pvalues': BASE_DIR / "data/03_tests/pvalues",
     'images_models': BASE_DIR / "images/cd_plots/models",
     'images_preprocessors': BASE_DIR / "images/cd_plots/preprocessors"
 }

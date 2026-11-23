@@ -1,0 +1,35 @@
+{
+  "title": "Impacto de Técnicas de Pré-processamento no Desempenho de Algoritmos de Classificação Binária (Impact of Data Preprocessing Techniques on the Performance of Binary Classification Algorithms) - código, dados e resultados",
+  "upload_type": "software",
+  "description": "<p>Código-fonte, dados processados e resultados do Trabalho de Conclusão de Curso &quot;Impacto de Técnicas de Pré-processamento no Desempenho de Algoritmos de Classificação Binária&quot; (Bacharelado em Estatística, Universidade Federal Fluminense, 2026). O experimento avalia 14 técnicas de pré-processamento (mais um cenário baseline) em 7 algoritmos de classificação binária (GNB, LR, KNN, SVM, RF, MLP, XGBoost) sobre 35 conjuntos de dados da suíte OpenML-CC18, em duas perspectivas (Igualdade e Equidade), com validação cruzada estratificada de 10 partições, MCC como métrica principal, métricas de custo computacional, teste de Wilcoxon pareado com correção de Benjamini-Hochberg e diagramas de diferença crítica.</p><p><em>English:</em> source code, processed data and results of the undergraduate thesis (B.Sc. in Statistics, Universidade Federal Fluminense, 2026) on the impact of preprocessing techniques on binary classifiers, using 35 OpenML-CC18 datasets, 7 algorithms and 14 preprocessing techniques.</p><p>Os dados em <code>data/01_datasets</code> derivam do OpenML-CC18 e mantêm as licenças originais; a licença MIT cobre o código e os resultados.</p>",
+  "creators": [
+    {
+      "name": "Poroca, Lucas Ribeiro",
+      "affiliation": "Universidade Federal Fluminense",
+      "orcid": "0009-0009-4894-4848"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Yaginuma, Karina Yuriko",
+      "type": "Supervisor",
+      "affiliation": "Universidade Federal Fluminense"
+    }
+  ],
+  "license": "mit",
+  "language": "por",
+  "access_right": "open",
+  "keywords": [
+    "machine learning",
+    "aprendizado de máquina",
+    "data preprocessing",
+    "pré-processamento de dados",
+    "binary classification",
+    "classificação binária",
+    "Matthews correlation coefficient",
+    "OpenML-CC18",
+    "benchmark",
+    "statistical tests"
+  ],
+  "notes": "A monografia correspondente foi apresentada sob o nome Lucas de Oliveira Poroca (nome anterior do autor)."
+}

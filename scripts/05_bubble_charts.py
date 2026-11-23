@@ -1,3 +1,14 @@
+"""Etapa 5 - Gráficos de bolhas e tabela-resumo (custo-benefício).
+
+Relaciona MCC mediano com tempo de treino / memória (cenário de desenvolvimento)
+e com tempo de predição / tamanho em disco (cenário de produção). Gera também a
+tabela com o melhor pré-processador de cada algoritmo.
+
+Entrada : data/aggregated_results.csv
+Saída   : images/bubble_charts/*.pdf, preprocessors_summary.csv / .tex
+Uso     : python scripts/05_bubble_charts.py   (requer LaTeX para o estilo "science")
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns

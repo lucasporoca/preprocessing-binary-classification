@@ -1,3 +1,15 @@
+"""Etapa 1 - Extração dos dados.
+
+Baixa do OpenML os conjuntos binários da suíte OpenML-CC18, aplica o tratamento
+inicial (remove colunas constantes, renomeia colunas para NUM_xx / CAT_xx e
+codifica o alvo como `target`) e salva o resultado.
+
+Entrada : internet (API do OpenML)
+Saída   : data/01_datasets/<dataset>.csv  e  data/metadata.csv
+Uso     : python scripts/01_extract_data.py
+Atenção : a pasta data/01_datasets é apagada e recriada a cada execução.
+"""
+
 import os
 import random
 import shutil
@@ -71,7 +83,7 @@ def main():
     project_dir = os.path.dirname(script_dir)
 
     data_dir = os.path.join(project_dir, 'data')
-    datasets_dir = os.path.join(data_dir, '1 - datasets')
+    datasets_dir = os.path.join(data_dir, '01_datasets')
 
     os.makedirs(data_dir, exist_ok=True)
     recreate_directory(datasets_dir)
