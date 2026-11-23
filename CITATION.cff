@@ -5,7 +5,7 @@ title: "Impacto de Técnicas de Pré-processamento no Desempenho de Algoritmos d
 version: "1.0.0"
 date-released: "2026-11-22"
 license: MIT
-repository-code: "https://github.com/lucasporoca/TCC"
+repository-code: "https://github.com/lucasporoca/preprocessing-binary-classification"
 authors:
   - family-names: Poroca
     given-names: Lucas Ribeiro
